@@ -1,0 +1,33 @@
+    if game.PlaceId == 15367026228 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/AnimeSoulsx/main/Script"))()
+      elseif game.PlaceId == 16914149804 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/SwordX/main/Script"))()
+      elseif game.PlaceId == 8501406566 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Legacy/main/Script"))()
+      elseif game.PlaceId == 16733754732 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Island/main/Script"))()
+      elseif game.PlaceId == 14752086859 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Max/main/Script"))()
+      elseif game.PlaceId == 6897167394 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/DemonPiece/main/Script"))()
+      elseif game.PlaceId == 15744137588 or game.PlaceId == 17556050821 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Slayer/main/Script"))()
+      elseif game.PlaceId == 14015533453 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Realms/main/Script"))()
+      elseif game.PlaceId == 17344826266 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Odyssey/main/Script"))()
+        elseif game.PlaceId == 17682006827 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Transform/main/Script"))()
+        elseif game.PlaceId == 17114605748 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Punching2/main/Script"))()
+        elseif game.PlaceId == 17872649351 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/PunchingNightSurvivors/main/Script"))()
+        elseif game.PlaceId == 17898378278 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/AnimeWeaponFighting/main/Script"))()
+        elseif game.PlaceId == 16741537517 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/AnimeHeroes/main/Script"))()
+      else
+      
+      toclipboard("https://discord.gg/lyzer")
+      game.Players.LocalPlayer:Kick("Game Not Supported, Discord copied to clipboard")
+    end
