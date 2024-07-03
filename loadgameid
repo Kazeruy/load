@@ -26,6 +26,8 @@
           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/AnimeWeaponFighting/main/Script"))()
         elseif game.PlaceId == 16741537517 then
           loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/AnimeHeroes/main/Script"))()
+        elseif game.PlaceId == 17857913030 then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/AnimeHaven/main/Script"))()
       else
       
       toclipboard("https://discord.gg/lyzer")
