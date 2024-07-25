@@ -28,4 +28,4 @@ else
     game.Players.LocalPlayer:Kick("Game Not Supported, Discord copied to clipboard")
 end
 
-loadstring(game:HttpGet("https://pastebin.com/raw/8MYFVcpt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Blacklisted/main/Script"))()
