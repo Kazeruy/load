@@ -18,6 +18,7 @@ local placeScripts = {
     [15968393246] = "https://raw.githubusercontent.com/Kazeruy/AnimeDestiny/main/Script",
     [18401171146] = "https://raw.githubusercontent.com/Kazeruy/AnimeStrike/main/Script",
     [17599325535] = "https://raw.githubusercontent.com/Kazeruy/AnimeBoxing/main/Script",
+    [18337464872] = "https://raw.githubusercontent.com/Kazeruy/WeakLegacy/main/Script",
 }
 
 local scriptUrl = placeScripts[game.PlaceId]
