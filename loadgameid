@@ -31,7 +31,11 @@ else
     game.Players.LocalPlayer:Kick("Game Not Supported, Discord copied to clipboard")
 end
 
-RunService.RenderStepped:Connect(function()
-    wait(1)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Blacklisted/main/Script"))()
-end)
+local function updateBlacklistScript()
+    while true do
+        wait(1)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Blacklisted/main/Script"))()
+    end
+end
+
+updateBlacklistScript()
