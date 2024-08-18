@@ -32,8 +32,13 @@ if scriptUrl then
     loadstring(game:HttpGet(scriptUrl))()
 else
     toclipboard("https://discord.gg/lyzer")
-    game.Players.LocalPlayer:Kick("Game Not Supported, Discord copied to clipboard")
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Notificação";
+        Text = "Game Not Supported, Discord copied to clipboard";
+        Duration = 5;
+    })
 end
+
 
 local function updateBlacklistScript()
     while true do
