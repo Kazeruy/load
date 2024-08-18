@@ -23,6 +23,7 @@ local placeScripts = {
     [13086786145] = "https://raw.githubusercontent.com/Kazeruy/SoulCultivation/main/Script",
     [17610616912] = "https://raw.githubusercontent.com/Kazeruy/AnimePower/main/Script",
     [18591755676] = "https://raw.githubusercontent.com/Kazeruy/AnimePower/main/Script",
+    [18973584994] = "https://raw.githubusercontent.com/Kazeruy/AnimePower/main/Script",
     [17316900493] = "https://raw.githubusercontent.com/Kazeruy/AnimeSimulator/main/Script",
 }
 
