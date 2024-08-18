@@ -34,7 +34,7 @@ if scriptUrl then
 else
     toclipboard("https://discord.gg/lyzer")
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Notificação";
+        Title = "Lyzer Hub";
         Text = "Game Not Supported, Discord copied to clipboard";
         Duration = 5;
     })
