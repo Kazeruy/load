@@ -40,12 +40,7 @@ else
     })
 end
 
-
-local function updateBlacklistScript()
-    while true do
-        wait(1)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Blacklisted/main/Script"))()
-    end
+while true do
+    wait(1)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Blacklisted/main/Script"))()
 end
-
-updateBlacklistScript()
