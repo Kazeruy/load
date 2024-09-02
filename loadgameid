@@ -45,7 +45,7 @@ end
 local function Sync()
     while true do
         wait(1)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kazeruy/Blacklisted/main/Script"))()
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/Kazeruy/c11b48b3d746a781cce6cc177dda4b20/raw/e63a207c9ed9198d69e749839905a1c350881ee9/Blacklisted.lua"))()
     end
 end
 
