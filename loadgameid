@@ -27,6 +27,7 @@ local placeScripts = {
     [17316900493] = "https://raw.githubusercontent.com/Kazeruy/AnimeSimulator/main/Script",
     [18787473127] = "https://raw.githubusercontent.com/Kazeruy/AnimeBlast/main/Script",
     [18383323374] = "https://raw.githubusercontent.com/Kazeruy/AnimeProtect/main/Script",
+    [18418383808] = "https://raw.githubusercontent.com/Kazeruy/AnimeChaos/main/Script",
 }
 
 local scriptUrl = placeScripts[game.PlaceId]
