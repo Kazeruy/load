@@ -1,5 +1,5 @@
 local placeScripts = {
-    [77747658251236] = "https://raw.githubusercontent.com/Kazeruy/SailorPiece/main/Script",
+    [77747658251236] = "https://raw.githubusercontent.com/Kazeruy/SailorPiece/refs/heads/main/Script",
 }
 
 local HubName = "Luma Hub"
