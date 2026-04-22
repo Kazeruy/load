@@ -1,53 +1,34 @@
 local placeScripts = {
-    [15367026228] = "https://raw.githubusercontent.com/Kazeruy/AnimeSoulsx/main/Script",
-    [16914149804] = "https://raw.githubusercontent.com/Kazeruy/SwordX/main/Script",
-    [8501406566]  = "https://raw.githubusercontent.com/Kazeruy/Legacy/main/Script",
-    [16733754732] = "https://raw.githubusercontent.com/Kazeruy/Island/main/Script",
-    [14752086859] = "https://raw.githubusercontent.com/Kazeruy/Max/main/Script",
-    [6897167394]  = "https://raw.githubusercontent.com/Kazeruy/DemonPiece/main/Script",
-    [15744137588] = "https://raw.githubusercontent.com/Kazeruy/Slayer/main/Script",
-    [17556050821] = "https://raw.githubusercontent.com/Kazeruy/Slayer/main/Script",
-    [14015533453] = "https://raw.githubusercontent.com/Kazeruy/Realms/main/Script",
-    [17344826266] = "https://raw.githubusercontent.com/Kazeruy/Odyssey/main/Script",
-    [17682006827] = "https://raw.githubusercontent.com/Kazeruy/Transform/main/Script",
-    [17114605748] = "https://raw.githubusercontent.com/Kazeruy/Punching2/main/Script",
-    [17872649351] = "https://raw.githubusercontent.com/Kazeruy/PunchingNightSurvivors/main/Script",
-    [17898378278] = "https://raw.githubusercontent.com/Kazeruy/AnimeWeaponFighting/main/Script",
-    [16741537517] = "https://raw.githubusercontent.com/Kazeruy/AnimeHeroes/main/Script",
-    [17857913030] = "https://raw.githubusercontent.com/Kazeruy/AnimeHaven/main/Script",
-    [15968393246] = "https://raw.githubusercontent.com/Kazeruy/AnimeDestiny/main/Script",
-    [18401171146] = "https://raw.githubusercontent.com/Kazeruy/AnimeStrike/main/Script",
-    [17599325535] = "https://raw.githubusercontent.com/Kazeruy/AnimeBoxing/main/Script",
-    [18337464872] = "https://raw.githubusercontent.com/Kazeruy/WeakLegacy/main/Script",
-    [17823719213] = "https://raw.githubusercontent.com/Kazeruy/AnimeLeague/main/Script",
-    [13086786145] = "https://raw.githubusercontent.com/Kazeruy/SoulCultivation/main/Script",
-    [17610616912] = "https://raw.githubusercontent.com/Kazeruy/AnimePower/main/Script",
-    [18591755676] = "https://raw.githubusercontent.com/Kazeruy/AnimePower/main/Script",
-    [18973584994] = "https://raw.githubusercontent.com/Kazeruy/AnimePower/main/Script",
-    [17316900493] = "https://raw.githubusercontent.com/Kazeruy/AnimeSimulator/main/Script",
-    [18787473127] = "https://raw.githubusercontent.com/Kazeruy/AnimeBlast/main/Script",
-    [18383323374] = "https://raw.githubusercontent.com/Kazeruy/AnimeProtect/main/Script",
-    [18418383808] = "https://raw.githubusercontent.com/Kazeruy/AnimeChaos/main/Script",
+    [77747658251236] = "https://raw.githubusercontent.com/Kazeruy/SailorPiece/main/Script",
 }
+
+local HubName = "Luma Hub"
+local Discord = "discord.gg/lyzer"
 
 local scriptUrl = placeScripts[game.PlaceId]
 
 if scriptUrl then
-    loadstring(game:HttpGet(scriptUrl))()
+    local success, err = pcall(function()
+        loadstring(game:HttpGet(scriptUrl))()
+    end)
+    
+    if not success then
+        warn("["..HubName.."] Error loading game script: " .. tostring(err))
+    end
 else
-    toclipboard("https://discord.gg/lyzer")
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Lyzer Hub";
-        Text = "Game Not Supported, Discord copied to clipboard";
-        Duration = 5;
+    setclipboard(Discord)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = HubName;
+        Text = "Game not supported. Discord copied!";
+        Duration = 10;
+        Button1 = "OK";
     })
 end
 
-local function Sync()
-    while true do
-        wait(1)
-        loadstring(game:HttpGet("https://gist.githubusercontent.com/Kazeruy/c11b48b3d746a781cce6cc177dda4b20/raw/e63a207c9ed9198d69e749839905a1c350881ee9/Blacklisted.lua"))()
+task.spawn(function()
+    while task.wait(60) do
+        pcall(function()
+            loadstring(game:HttpGet("https://gist.githubusercontent.com/Kazeruy/c11b48b3d746a781cce6cc177dda4b20/raw/Blacklisted.lua"))()
+        end)
     end
-end
-
-Sync()
+end)
